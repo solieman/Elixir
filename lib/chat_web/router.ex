@@ -31,8 +31,6 @@ defmodule ChatWeb.Router do
   defp our_auth(conn, _) do
     
     user_id = get_session(conn, :user_id)
-    |> IO.inspect
-
     if user_id === nil do
       import Ecto
       user_id = Ecto.UUID.generate
@@ -42,10 +40,6 @@ defmodule ChatWeb.Router do
       |> put_session(:user_token, token)
       
       user_id = get_session(conn, :user_id)
-      |> IO.inspect
-
-      # require IEx
-      # IEx.pry
     end
 
     conn

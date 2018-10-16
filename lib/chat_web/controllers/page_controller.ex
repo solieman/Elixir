@@ -11,7 +11,7 @@ defmodule ChatWeb.PageController do
       conn |> assign(:user_id, uuid)
       user_id = get_session(conn, :user_id)
     end
-
+    
     render conn, "index.html",
       title: "Hello from the contoller"
   end

@@ -26,6 +26,7 @@ defmodule ChatWeb.RoomChannel do
     unless payload["type"] == "game-event" do
       Chat.Message.changeset(%Chat.Message{}, payload) |> Chat.Repo.insert   
     end
+    
     broadcast socket, "shout", payload
     {:noreply, socket}
   end

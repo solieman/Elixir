@@ -40,7 +40,7 @@ if (payload.type !== "game-result") {
       ul.appendChild(li);                    // append to list 
     }
   } else {
-    console.log(payload);
+    alert('Winner is ' + payload.name)
     reset_board();
   }
   
