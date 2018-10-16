@@ -1,0 +1,62 @@
+<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
+  <h4><%= title(@conn) %></h4>
+</div>
+<div class="container">
+  <div class="row">
+
+    <div class="col col-md-5 col-sm-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavender;">
+              <div class="btn btn-info full-width game-btn" id="btn00">-</div>
+            </div>
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavenderblush;">
+              <div class="btn btn-info full-width game-btn" id="btn01">-</div>
+            </div>
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavender;">
+              <div class="btn btn-info full-width game-btn" id="btn02">-</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavender;">
+              <div class="btn btn-info full-width game-btn" id="btn10">-</div>
+            </div>
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavenderblush;">
+              <div class="btn btn-info full-width game-btn" id="btn11">-</div>
+            </div>
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavender;">
+              <div class="btn btn-info full-width game-btn" id="btn12">-</div>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavender;">
+              <div class="btn btn-info full-width game-btn" id="btn20">-</div>
+            </div>
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavenderblush;">
+              <div class="btn btn-info full-width game-btn" id="btn21">-</div>
+            </div>
+            <div class="col-sm-4 col-xs-4 no-padding" style="background-color:lavender;">
+              <div class="btn btn-info full-width game-btn" id="btn22">-</div>              
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col col-md-7 col-sm-7">
+      <div class="container-fluid">
+        <!-- The list of messages will appear here: -->
+        <ul id='msg-list' class='row' style='list-style: none; min-height:200px; padding: 10px;'></ul>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <input type="text" id="name" class="form-control" placeholder="Your Name" disabled>
+          </div>
+          <div class="col-xs-9">
+            <input type="text" id="msg" class="form-control" placeholder="Your Message" autofocus>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

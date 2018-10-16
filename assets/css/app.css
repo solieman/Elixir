@@ -1,0 +1,93 @@
+/* This file is for your main application css. */
+
+.chat-head {
+    background: #1abc9c;
+    color: white;
+    font-weight: bold;
+    padding: 2vh 1vh;
+  }
+  .contact-body {
+      background: #fff;
+      overflow-y: auto;
+  }
+  .contact-body-search {
+    padding: 3% 1%;
+    background: #fff;
+  }
+  .contact-body-list {
+    background: #fff;
+    overflow-y: auto;
+  }
+  .chat-body {
+    background: #fff;
+    overflow-y: auto;
+  }
+  .chat-send-body {
+    padding: 5% 5%;
+    background: #bdc3c7;
+  }
+  .img-avatar {
+      width:auto;
+  }
+  /*chat*/
+  .you-chat {
+    position: relative;
+    background: #1abc9c;
+    height: 10vh;
+    padding: 5% 6%;
+    margin-bottom: 20px;
+    color: white;
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+  }
+  .you-chat:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-right-color: #1abc9c;
+    border-width: 8px;
+    margin-top: -18px;
+  }
+  /*chat*/
+  .me-chat {
+    position: relative;
+    background: #bdc3c7;
+    height: 10vh;
+    padding: 5% 6%;
+    margin-bottom: 20px;
+    color: black;
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    text-align: right;
+  }
+  .me-chat:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #bdc3c7;
+    border-width: 8px;
+    margin-top: -18px;
+  }
+
+  div .no-padding {
+    padding:0;
+  }
+  
+  div .full-width{
+    width:100%;
+    /* //display:block; //only if you're having issues */
+  }
